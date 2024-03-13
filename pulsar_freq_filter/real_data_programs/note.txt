@@ -1,0 +1,18 @@
+The conversion of the raw pulsar TOA data files into pulsar angular frequency
+files is done by the programs in the "make_freq_files" directory
+
+The slurm scripts in real_data_run run the Kalman filter and nested sampler method 
+on the frequency data to get a posterior distribution for the model parameters. 
+slurm_test_01.sh tests the one-component model.
+slurm_test_02.sh tests the two-component model.
+
+The programs that are called to do the tests are contained in the "programs" directory.
+
+Order to run things in to get basic results:
+Go to make_freq_files directory
+Run test_script_01.sh
+Go to real_data_run directory
+Create directories ./outdir01/ and ./outdir02/
+Run slurm_test_01.sh and slurm_test_02.sh
+Done
+

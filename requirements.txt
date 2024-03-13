@@ -1,0 +1,9 @@
+numpy
+matplotlib
+sdeint
+tqdm
+numba
+bilby
+pandas
+corner
+libstempo

@@ -1,0 +1,24 @@
+These two scripts each simulate 200 pulsar frequency time series. They 
+then run the Kalman filter and nested sampler method on the data to get 
+a posterior distribution for the model parameters. 
+
+The programs in this directory simulate measurement noise with variance R_in 
+and the Kalman filter used in the parameter estimation assumes a measurement
+noise variance of R_out. Each of the scripts has different values for R_in 
+and R_out. 
+slurm_test_01.sh has R_in = 1e-27, R_out = 1e-23
+slurm_test_02.sh has R_in = 1e-23, R_out = 1e-27.
+An empty output directory must be created before running each of these 
+programs to store the output.
+
+The programs that are called to do the simulations are contained in the 
+"programs" directory. The programs in "in_out_plots" and "pp_plots" can be 
+used to assess the results of the simulations.
+
+Order to run things in to get basic results:
+Create directories ./outdir01/ and ./outdir02/
+Run slurm_test_01.sh and slurm_test_02.sh
+Change directory to ./in_out_plots/
+Run analyse_modes_ll_noload.sh
+Done
+

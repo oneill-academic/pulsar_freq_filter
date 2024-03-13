@@ -1,0 +1,17 @@
+The script slurm_test_01.sh simulates 200 sets of simulated TOAs with the same 
+spacing as the TOAs from the real data. It then runs the Kalman filter and 
+nested sampler method on the data to get a posterior distribution for the 
+model parameters. The Kalman filter is also run on the true frequencies that 
+were generated during the simulation of the TOAs as a comparison.
+
+The programs that are called to do the simulations are contained in the 
+"programs" directory. The programs in "in_out_plots" and "pp_plots" can be 
+used to assess the results of the simulations.
+
+Order to run things in to get basic results:
+Create directory ./outdir01/
+Run slurm_test_01.sh
+Change directory to ./in_out_plots/
+Run analyse_modes_ll_noload.sh
+Done
+

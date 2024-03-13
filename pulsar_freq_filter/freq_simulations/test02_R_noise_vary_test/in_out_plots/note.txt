@@ -1,0 +1,6 @@
+analyse_modes_ll_noload.sh will load the data in outdir01 and outdir02 for 
+all 200 simulations and plot the results.
+
+The python program in this folder is called by the aforementioned script to
+do the actual plotting.
+

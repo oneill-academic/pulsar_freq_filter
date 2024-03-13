@@ -1,0 +1,8 @@
+test01_R_noise_size_test tests the ability of the Kalman filter method to
+recover the model parameters with varying levels of measurement noise in the
+data.
+
+test02_R_noise_vary_test tests the ability of the Kalman filter to use an EFAC 
+parameter to correct for an incorrect measurement error given to the Kalman
+filter.
+

@@ -1,0 +1,8 @@
+test01_random_toas generates TOAs randomly spaced over some timespan, uses 
+TEMPO2 to fit frequencies to the simulated TOAs and then runs the Kalman 
+filter parameter estimation method on the fitted frequencies.
+
+test02_cadence_toas generates TOAs with the same spacing or "cadence" as a 
+real data set, uses TEMPO2 to fit frequencies to the simulated TOAs and then 
+runs the Kalman filter parameter estimation method on the fitted frequencies.
+
